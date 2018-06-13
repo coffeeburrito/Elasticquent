@@ -29,4 +29,11 @@ return array(
 
     'default_index' => 'my_custom_index_name',
 
+    'aws' => [
+        'enable' => false,
+        'key'    => 'YOUR_AWS_KEY',
+        'secret' => 'YOUR_AWS_SECRET',
+        'region' => 'YOUR_AWS_REGION',
+    ],
+
 );
