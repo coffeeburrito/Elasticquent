@@ -18,7 +18,7 @@ trait ElasticquentClientTrait
         // elasticsearch v2.0+ using builder
         if (class_exists('\Elasticsearch\ClientBuilder')) {
             $awsConfig = $this->getElasticConfig('aws');
-            if (!empty($awsConfig) && array_get($awsConfig, 'enable', false)) {
+            if (class_exists('\Aws\ElasticsearchService\ElasticsearchPhpHandler') && !empty($awsConfig) && array_get($awsConfig, 'enable', false)) {
                 $provider = \Aws\Credentials\CredentialProvider::fromCredentials(
                     new \Aws\Credentials\Credentials(
                         array_get($awsConfig, 'key'),
