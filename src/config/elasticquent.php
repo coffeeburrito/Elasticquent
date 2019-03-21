@@ -31,9 +31,7 @@ return array(
 
     'aws' => [
         'enable' => false,
-        'key'    => 'YOUR_AWS_KEY',
-        'secret' => 'YOUR_AWS_SECRET',
-        'region' => 'YOUR_AWS_REGION',
+        'region' => 'us-east-1',
     ],
 
 );
